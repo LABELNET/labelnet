@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/user.css" rel="stylesheet" />
+    <script src="js/time.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title></title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!--顶端-->
+    <div id="top">
+        <img src="images/user_logo.png" />
+        <label></label>
+    </div>
+    <!--导航-->
+    <div id="daohang">
+        <img src="images/logo.png" />
+        <ul>
+            <li><a href="index.aspx">首页</a></li>
+            <li><a href="newTitile.aspx">最新文章</a></li>
+            <li><a href="newRes.aspx">实用资源</a></li>
+            <li><a href="ConnOther.aspx">给我留言</a></li>
+            <li><a href="about.aspx">关于我</a></li>
+        </ul>
+    </div>
+
+
+
+    <form id="user_form" runat="server">
+        <div>
+            <div id="right_div">
+                <div class="right_class">
+                    <h4>网站公告</h4>
+                    <p>本人菜鸟一只，欢迎共同学习！</p>
+                    <img src="images/psbQ6ELMYU5.jpg" style="width: 100px; height: 100px;" />
+                    <div id="Clock" style="font-size: 20px; color: #ff6a00; text-align: left;"></div>
+                </div>
+                <div class="right_class_short">
+                    <h4>快乐分享</h4>
+                    <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                    <script src="js/fenxiang.js"></script>
+                </div>
+                <div class="right_class_short">
+                    <h4>分类标签</h4>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Style="text-decoration: none">.NET</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton8" runat="server" Style="text-decoration: none">Java</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton7" runat="server" Style="text-decoration: none">android</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton6" runat="server" Style="text-decoration: none">杂谈</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton5" runat="server" Style="text-decoration: none">科技普及</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton4" runat="server" Style="text-decoration: none">C++</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton3" runat="server" Style="text-decoration: none">C</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton2" runat="server" Style="text-decoration: none">趣文</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton9" runat="server" Style="text-decoration: none">笑话</asp:LinkButton>
+                </div>
+                <div class="right_class">
+                    <h4>最新评论/留言</h4>
+                    <div>
+
+                        <%
+                            List<plunModel> plunlist = (List<plunModel>)Session["plunList"];
+                            int count = plunlist.Count;
+                            if (count >= 5)
+                            {
+                                for (int i = 1; i <= 5; i++)
+                                {
+                                    plunModel pm = plunlist[count - i];
+                                    Response.Write("<img src=" + "images/psbQ6ELMYU5.jpg" + " style='width: 30px; height: 30px;' />");
+                                    Response.Write("<Label style='float:right;font-size:12px;'>" + pm.Pdate + "</Label>&nbsp");
+                                    Response.Write("<Label style='font-size:15px;'>" + pm.Pbody + "</Label><br/>");
+                                }
+                            }
+                            else
+                            {
+                                for (int i = count % 5 - 1; i >= 0; i--)
+                                {
+                                    plunModel pm = plunlist[i];
+                                    Response.Write("<img src=" + "images/psbQ6ELMYU5.jpg" + " style='width: 30px; height: 30px;' />");
+                                    Response.Write("<Label style='float:right;font-size:12px;'>" + pm.Pdate + "</Label>&nbsp");
+                                    Response.Write("<Label style='font-size:15px;'>" + pm.Pbody + "</Label><br/>");
+                                }
+                            }
+                        %>
+                    </div>
+                </div>
+                <div class="right_class">
+                    <h4>友情链接</h4>
+                    <img src="images/kongjian.png" />
+                    <a href="http://user.qzone.qq.com/1406046087/infocenter?ptsig=j1ERqrj95o0942ZcXUPBOpN2*Bm-u512ybN4MmSeTiw" target="_blank">站长空间</a><br />
+                    <img src="images/boke.png" />
+                    <a href="http://blog.sina.com.cn/labelnet" target="_blank">站长博客</a><br />
+                    <img src="images/psbQ6ELMYU5.jpg" style="width: 36px; height: 36px;" />
+                    <a href="admin.aspx" target="_blank">站长登陆</a>
+                </div>
+                <div class="right_class">
+                    <h4>网站统计</h4>
+                    <p>
+                        分类总数：9个
+                        <br />
+                        链接总数：2个<br />
+                        建站日期：2015-01-05<br />
+                        最后更新：<%=DateTime.Now.ToLongDateString()%><br />
+                        今日星期：<%=DateTime.Now.DayOfWeek %>
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div id="content_left">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+
+
+
+    <div class="user_footer">
+        <img src="images/logo.png" style="margin-left:10px;" />
+    </div>
+
+    <div id="button_footer">
+
+        <div class="footer_div">Copyright © 2015 LABELNET. All rights reserved.</div>
+    </div>
+
+</body>
+</html>

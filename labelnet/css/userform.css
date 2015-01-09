@@ -1,0 +1,65 @@
+﻿.user_form {
+    height: 250px;
+    width: 100%;
+    margin-top:20px;
+    background-color: aliceblue;
+    border: 1px solid #00b0f0;
+    font-family: '微软雅黑';
+}
+
+    .user_form .form_date {
+        border-bottom: 1px solid #00b0f0;
+        height: 50px;
+        width: 100%;
+        background-color: #9eeeeb;
+    }
+
+        .user_form .form_date label {
+            float: right;
+            margin-top: 10px;
+            height: 80%;
+            margin-right: 5px;
+        }
+
+        .user_form .form_date a {
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 10px;
+            color: black;
+        }
+
+    .user_form img {
+        height: 180px;
+        width: 20%;
+        margin-top: 10px;
+        margin-left: 5px;
+        background-image: url('../images/psbQ6ELMYU5.jpg');
+    }
+
+    .user_form .form_body {
+        float: right;
+        height: 180px;
+        width: 75%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+        .user_form .form_body p {
+            height: 108px;
+            width: 100%;
+            overflow: hidden;
+            margin: -2px 0px 0px 0px;
+        }
+
+        .user_form .form_body a {
+            text-decoration: none;
+            float: right;
+            margin-top:-50px;
+            margin-right: 20px;
+            font-size: 15px;
+            color: red;
+        }
+        .user_form .form_body label{
+            position:absolute ;
+             margin-top:-50px;
+        }
