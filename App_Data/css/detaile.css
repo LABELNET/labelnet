@@ -1,0 +1,58 @@
+﻿.detalie_form {
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #00ffff;
+    background-color: aliceblue;
+}
+
+    .detalie_form .detalie_name {
+        height: 50px;
+        background-color: #9eeeeb;
+        border-bottom:5px solid #00ffff;
+    }
+
+        .detalie_form .detalie_name label {
+            color: black;
+            margin-top: 40px;
+            font-size: 25px;
+            font-family: '楷体';
+        }
+        .detalie_form .detalie_name img {
+            width:45px;
+            height:45px;
+            margin-top:2px;
+            margin-left:2px;
+        }
+        .detalie_form .detalie_name p {
+               font-family: '楷体';
+               float:right;
+        }
+
+    .detalie_form .detalie_body {
+        margin-top:20px;
+        height:700px;
+    }
+        .detalie_form .detalie_body img {
+            height:200px;
+        }
+        .detalie_form .detalie_body p {
+              font-family: '楷体';
+              height:500px;
+              overflow:hidden;
+              overflow-y:scroll;
+        }
+
+    .detalie_form .detalie_buttom {
+       margin-top:20px;
+    }
+        .detalie_form .detalie_buttom label {
+             font-family: '楷体';
+        }
+    .detalie_form .detalie_plun {
+        margin-top:20px;
+        height:200px;
+    }
+    .detalie_form .detalie_addplun {
+        margin-top:40px;
+       margin-left:50px;
+    }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/user.master" AutoEventWireup="true" CodeFile="newTitile.aspx.cs" Inherits="newTitile" %>
+﻿<%@ Page Title="" Language="C#" Debug="true" MasterPageFile="~/user.master" AutoEventWireup="true" CodeFile="newTitile.aspx.cs" Inherits="newTitile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>最新文章</title>

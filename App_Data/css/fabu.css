@@ -1,0 +1,145 @@
+﻿html {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+body {
+    background-image: url(../images/admin_bg.jpg);
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+#top {
+    height: 150px;
+    background-color: ghostwhite;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.top_label {
+    float: right;
+    margin-right: 40px;
+    margin-top: 1px;
+}
+
+#top img {
+    margin-left: 20px;
+}
+
+#top Label {
+    float: right;
+    margin-right: 30%;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+
+
+#daohang {
+    height: 60px;
+    margin-top: -3px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: darkcyan;
+}
+
+    #daohang img {
+        float: right;
+        margin-left: auto;
+        margin-right: 12px;
+    }
+
+    #daohang ul {
+        width: 980px;
+        list-style: none;
+        margin: 0px auto 0px auto;
+    }
+
+        #daohang ul li {
+            float: left;
+        }
+
+            #daohang ul li a {
+                width: 90px;
+                height: 50px;
+                line-height: 60px;
+                color: #FFF;
+                font-size: 20px;
+                display: block; /*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+                text-align: center;
+                text-decoration: none;
+            }
+
+                #daohang ul li a:hover {
+                    width: 90px;
+                    height: 60px;
+                    line-height: 60px;
+                    background: #00b0f0;
+                }
+
+    #daohang label {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        margin-left: 15px;
+        margin-top: auto;
+    }
+
+#login_form {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+    width: 447px;
+}
+
+#fabutitle_form {
+    position: absolute;
+    font-family: '微软雅黑';
+    top: 30%;
+    left: 40%;
+    right: 40%;
+    width: 447px;
+}
+
+#fabuRes_form {
+    position: absolute;
+    font-family: '微软雅黑';
+    top: 30%;
+    left: 40%;
+    right: 7%;
+    width: 447px;
+    height: 522px;
+}
+
+#footer_top {
+    height: 60px;
+    background-color: darkcyan;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 660px;
+}
+
+footer {
+    height: 150px;
+    background-color: azure;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.footer_div {
+    color: GrayText;
+    font-family: '宋体';
+    font-size: small;
+    text-align: center;
+}
+
+.form_btn_zhuxiao {
+    float: right;
+}

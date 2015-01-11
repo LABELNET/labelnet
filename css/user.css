@@ -1,0 +1,166 @@
+﻿html {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    margin-top: -8px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+body {
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    width: 100%;
+    overflow: hidden;
+}
+
+#top {
+    height: 250px;
+    margin-top: -80px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-image: url('../images/htmltop.gif');
+}
+
+.top_label {
+    float: right;
+    margin-right: 40px;
+    margin-top: 1px;
+}
+
+#top img {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+#top Label {
+    float: right;
+    margin-right: 30%;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+
+
+#daohang {
+    height: 60px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: darkcyan;
+}
+
+    #daohang img {
+        float: right;
+        margin-left: auto;
+        margin-right: 12px;
+    }
+
+    #daohang ul {
+        width: 980px;
+        list-style: none;
+        margin: 0px auto 0px auto;
+    }
+
+        #daohang ul li {
+            float: left;
+        }
+
+            #daohang ul li a {
+                width: 150px;
+                height: 50px;
+                line-height: 60px;
+                color: #FFF;
+                font-family: '微软雅黑';
+                font-size: 20px;
+                display: block; /*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+                text-align: center;
+                text-decoration: none;
+            }
+
+                #daohang ul li a:hover {
+                    width: 150px;
+                    height: 60px;
+                    line-height: 60px;
+                    background: #00b0f0;
+                }
+
+    #daohang label {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        margin-left: 15px;
+        margin-top: auto;
+    }
+
+#user_form {
+    height: auto;
+    width: 100%;
+}
+
+#right_div {
+    position: relative;
+    float: right;
+    height: 1000px;
+    width: 25%;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#content_left {
+    position: relative;
+    float: left;
+    height: 1200px;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.user_footer {
+    position: relative;
+    height: 60px;
+    margin-top: 1300px;
+    margin-right: -10px;
+    margin-left: -10px;
+    background-color: darkcyan;
+}
+
+#button_footer {
+    position: relative;
+    height: 100px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.footer_div {
+    color: GrayText;
+    font-family: '宋体';
+    font-size: small;
+    text-align: center;
+}
+
+.right_class {
+    font-family: '微软雅黑';
+    width: 100%;
+    height: 200px;
+}
+
+    .right_class h4 {
+        color: red;
+        border-bottom: 2px #00b0f0 solid;
+    }
+
+    .right_class a {
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+.right_class_short {
+    font-family: '微软雅黑';
+    width: 100%;
+    height: 80px;
+}
+
+    .right_class_short h4 {
+        color: red;
+        border-bottom: 2px #00b0f0 solid;
+    }
